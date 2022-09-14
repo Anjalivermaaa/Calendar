@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Lato","sans-serif";
+}
+.wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe6df;
+}
+.calender{
+    margin: auto;
+    width: 600px;
+    /* height: 400px; */
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+}
+.month{
+    display: flex;
+    padding: 40px 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #5cdb95;
+    color: #06386B;
+}
+/* .weekends{
+    display: flex;
+    justify-content: sp;
+    background-color: #8ee4af;
+    width: 100%;
+    padding: 8px;
+    color: #06386B;
+    font-weight: bold;
+} */
+.weekends{
+    display: flex;
+    padding: 7px;
+    color: #06386B;
+    background-color: #8ee4af;
+    font-weight: bold;
+}
+.weekends div{
+    width: 14.28%;
+    text-align: center;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.days div{
+    width: 14.28%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.days div:hover{
+    background-color: #dfe7df;
+    cursor: pointer;
+
+}
+.today{
+    background-color: #5cdb95;
+    color: #06386B;
+    font-weight: bold;
+}
+.PrevDate{
+    color: #999;
+}
+#month{
+    font-size: 30px;
+    font-weight: 500;
+}
+.prev, .next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    transition: all 0.4ms;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) {
+    .weekends{
+        justify-content: space-evenly;
+        font-size: 2vh;
+    }
+}
